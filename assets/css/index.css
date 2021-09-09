@@ -36,3 +36,37 @@
     transform-origin: left 210px;
 }
 
+.mustache:before {
+    animation: animLeft 1s ease-in-out infinite;
+}
+.mustache:after {
+    animation: animRight 1s ease-in-out infinite;
+}
+
+@keyframes animLeft {
+    0% {
+        transform: rotate( -50deg );
+    }
+
+    50% {
+        transform: rotate( -30deg );
+    }
+
+    100% {
+        transform: rotate( -50deg );
+    }
+}
+
+@keyframes animRight {
+    0% {
+        transform: rotate( 50deg );
+    }
+
+    50% {
+        transform: rotate( 30deg );
+    }
+
+    100% {
+        transform: rotate( 50deg );
+    }
+}
