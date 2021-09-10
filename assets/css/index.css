@@ -1,20 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #21202A;
+    color: white;
+}
 
 .mustache {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     position: absolute;
-    color: black;
+    color: white;
     box-shadow:
-                150px 240px 0 0 currentColor,
-                300px 240px 0 0 currentColor;
+                -90px 500px 0 0 currentColor,
+                60px 500px 0 0 currentColor;
 }
 
 .mustache::before {
     content: "";
     position: absolute;
-    left: 30px;
-    top: 120px;
+    left: -210px;
+    top: 380px;
     width: 210px;
     height: 120px;
     border-bottom: solid 180px currentColor;
@@ -26,8 +34,8 @@
 .mustache::after {
     content: "";
     position: absolute;
-    left: 390px;
-    top: 120px;
+    left: 150px;
+    top: 380px;
     width: 210px;
     height: 120px;
     border-bottom: solid 180px currentColor;
@@ -70,3 +78,35 @@
         transform: rotate( 50deg );
     }
 }
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-top: 40px; 
+}
+
+header h2 {
+    font-size: 30px;
+    margin-top: 20px; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eyes {
+    width: 140px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    box-shadow:
+                -90px 230px 0 0 currentColor,
+                60px 230px 0 0 currentColor;
+}
+
